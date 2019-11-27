@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Suppression</h1>
+<div mat-dialog-content>
+  <div>
+    Voulez-vous vraiment supprimer <b>{{city.title}}</b>?
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="doAction()" mat-flat-button color="warn">Supprimer</button>
+  <button mat-button (click)="closeDialog()">Annuler</button>
+</div>

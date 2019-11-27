@@ -10,78 +10,64 @@
         {
             "title": "Paris",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
+            "lat": "48.8588377",
+            "long": "2.2783934",
             "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
         },
         {
             "title": "Londres",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
+            "lat": "51.5285582",
+            "long": "-0.2416815",
             "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
         },
         {
             "title": "Rome",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
+            "lat": "41.909986",
+            "long": "12.3959135",
             "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
         },
         {
-            "title": "Madrid",
+            "title": "Bogota",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
+            "lat": "4.6482837",
+            "long": "-74.2478945",
             "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
         },
         {
-            "title": "Paris",
+            "title": "Moscou",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
+            "lat": "55.5807481",
+            "long": "36.8251237",
             "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
         },
         {
-            "title": "Londres",
+            "title": "Pekin",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
+            "lat": "39.9385466",
+            "long": "116.1172717",
             "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
         },
         {
-            "title": "Rome",
+            "title": "Tokyo",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
+            "lat": "35.5040533",
+            "long": "138.648594",
             "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
         },
         {
-            "title": "Madrid",
+            "title": "Dakar",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
+            "lat": "14.7110139",
+            "long": "-17.5358657",
             "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
         },
         {
-            "title": "Paris",
+            "title": "Reykjavik",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
-            "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
-        },
-        {
-            "title": "Londres",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
-            "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
-        },
-        {
-            "title": "Rome",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "lat": "40.41678",
-            "long": "-3.70379",
+            "lat": "64.1334735",
+            "long": "-21.9224814",
             "image_url": "https://c2.staticflickr.com/2/1269/4670777817_d657cd9819_b.jpg"
         }
     ]

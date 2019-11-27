@@ -1,38 +1,54 @@
-<div class="container">
-    <h2>City list</h2>
-    <mat-table class="lessons-table mat-elevation-z8" [dataSource]="dataSource">
-    
-        <ng-container matColumnDef="seqNo">
-            <mat-header-cell *matHeaderCellDef>Titre</mat-header-cell>
-            <mat-cell *matCellDef="let city"  (click)="onRowClicked(row)">
-                {{city.title}}</mat-cell>
-        </ng-container>
-    
-        <ng-container matColumnDef="description">
-            <mat-header-cell *matHeaderCellDef>Longitude</mat-header-cell>
-            <mat-cell *matCellDef="let city" (click)="onRowClicked(row)">
-                {{city.long}}
-            </mat-cell>
-        </ng-container>
-    
-        <ng-container matColumnDef="duration">
-            <mat-header-cell *matHeaderCellDef>Latitude</mat-header-cell>
-            <mat-cell *matCellDef="let city">{{city.lat}}</mat-cell>
-        </ng-container>
-
-        <ng-container matColumnDef="action" stickyEnd>
-            <th mat-header-cell *matHeaderCellDef></th>
-            <td mat-cell *matCellDef="let city">
-                <button mat-mini-fab color="primary" ><mat-icon>edit</mat-icon></button>
-                <button mat-mini-fab color="warn" (click)="delete(city)"><mat-icon>delete</mat-icon></button>
-            </td>
-        </ng-container>
-
+<mat-sidenav-container class="example-container">
+    <div class="container">
+        <h2>Liste des villes</h2>
+        <div class="row">
+            <!-- <div class="col d-flex align-items-center">
+                <mat-slide-toggle class="primary align-middle"
+                    [(ngModel)]="displayCards" color="primary">
+                  Affichage en cartes
+                </mat-slide-toggle>
+            </div> -->
+            <div class="col align-self-end pr-4">
+                <button mat-mini-fab color="primary" class="add-btn-grp mb-2" (click)=edit()>
+                    <mat-icon>add</mat-icon>
+                </button>
+            </div>
+        </div>
+        <mat-table class="lessons-table mat-elevation-z8" [dataSource]="dataSource" >
+            <ng-container matColumnDef="seqNo">
+                <mat-header-cell *matHeaderCellDef>Nom</mat-header-cell>
+                <mat-cell *matCellDef="let city"  (click)="onRowClicked(row)">
+                    {{city.title}}</mat-cell>
+            </ng-container>
         
-        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <ng-container matColumnDef="description">
+                <mat-header-cell *matHeaderCellDef>Longitude</mat-header-cell>
+                <mat-cell *matCellDef="let city" (click)="onRowClicked(row)">
+                    {{city.long}}
+                </mat-cell>
+            </ng-container>
+        
+            <ng-container matColumnDef="duration">
+                <mat-header-cell *matHeaderCellDef>Latitude</mat-header-cell>
+                <mat-cell *matCellDef="let city">{{city.lat}}</mat-cell>
+            </ng-container>
     
-        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+            <ng-container matColumnDef="action" stickyEnd>
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let city; let i = index;">
+                    <button mat-mini-fab color="primary" (click)="edit(city, i);"><mat-icon>edit</mat-icon></button>
+                    <button mat-mini-fab color="warn" (click)="delete(city, i)"><mat-icon>delete</mat-icon></button>
+                </td>
+            </ng-container>
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        
+            <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    
+        </mat-table>
+        <mat-paginator [pageSizeOptions]="[10, 20]" showFirstLastButtons></mat-paginator>    
+    </div>
+    <mat-sidenav #sidenav position="end" style="width: 400px;" (opened)="opened = true" (closed)="opened = false">
+        <app-city-detail [sidenav]="sidenav" [city]="selectedCity" *ngIf="opened" (valueChange)="save($event)"></app-city-detail>
+    </mat-sidenav>
 
-    </mat-table>
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>    
-</div>
+</mat-sidenav-container>
