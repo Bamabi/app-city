@@ -42,7 +42,8 @@
                 </div>
             </div>
         </div>
-        <button mat-raised-button color="primary" type="submit">Valider</button>
+        <img *ngIf="image_url && image_url.value !== ''" [src]="image_url.value" onError="this.src='assets/images/image-not-found.jpg'" style="width: 250px">
+        <button mat-raised-button color="primary" type="submit" class="mt-2" id="save">Valider</button>
     </form>
 </div>
 

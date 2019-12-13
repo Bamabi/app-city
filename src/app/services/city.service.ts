@@ -11,7 +11,7 @@ export class CityService {
   // Base url
   baseurl = 'http://localhost:3000';
 
-  constructor(private http: HttpClient) { }
+  constructor(/*private http: HttpClient*/) { }
 
   // Http Headers
   httpOptions = {

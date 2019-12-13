@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { TESTING_IMPORTS } from '../../../../testing-provider';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { CityDetailComponent } from './city-detail.component';
 
@@ -8,7 +10,9 @@ describe('CityDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CityDetailComponent ]
+      declarations: [ CityDetailComponent ],
+      imports: TESTING_IMPORTS,
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
